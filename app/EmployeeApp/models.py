@@ -15,6 +15,10 @@ class Employee(models.Model):
     hourly_rate = models.FloatField(null=False)
     is_team_leader = models.BooleanField()
     
+    def get_employee(self):
+        return self.name + ' belongs to ' + self.get_team_name() + ' team.'
+    def get_team_name(self):
+        return Team(self.team).name
     
 class Work_Arrangement(models.Model):
     """
