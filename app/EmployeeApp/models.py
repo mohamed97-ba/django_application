@@ -1,5 +1,6 @@
 from random import choices
 from django.db import models
+
 from .utils import WorkType, Team
 
 
@@ -34,7 +35,9 @@ class Work_Arrangement(models.Model):
     def get_work_type(self):
         return WorkType(self.full_or_partime).name
     
-   
+    @staticmethod
+    def get_jobs_by_employee(employee_id):
+        return Work_Arrangement.objects.all().filter(employee=employee_id)
     
             
             
