@@ -21,12 +21,12 @@ pip install -r requirement.txt
 
 ## Structure
 
-In our case, `Employee`, Work_Arrangement`, so we will use the following URLS - `/employees/` and `/employees/<pk>` for collections and elements, respectively:
+In our case, `Employee`, `Work_Arrangement`, so we will use the following URLS - `/employees/` and `/employees/<pk>` for collections and elements, respectively:
 
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
 `employees, jobs` | GET | READ | Get all employees, jobs
-`employees/:pk` jobs/:pk`| GET | READ | Get a single employee, single job
+`employees/:pk, jobs/:pk`| GET | READ | Get a single employee, single job
 `employees, jobs`| POST | CREATE | Create a new employee, new job
 `employees/:pk, jobs/:pk`| PUT | UPDATE | Update an employee, job
 `employees/:pk, jobs/:pk`| DELETE | DELETE | Delete an employee, job
@@ -55,3 +55,5 @@ we get the movie with id = 1
 ```
 {"id":1,"name":"mohamed","team":"DT","hourly_rate":20.0,"is_team_leader":true}
 ```
+
+
