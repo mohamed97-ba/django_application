@@ -50,8 +50,8 @@ we get:
 [{"id":1,"name":"mohamed","team":"DT","hourly_rate":20.0,"is_team_leader":true},{"id":2,"name":"hamza","team":"DT","hourly_rate":15.0,"is_team_leader":false}]
 ```
 
-```
 we get the movie with id = 1
+
 ```
 {"id":1,"name":"mohamed","team":"DT","hourly_rate":20.0,"is_team_leader":true}
 ```
