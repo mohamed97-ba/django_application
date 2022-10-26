@@ -5,7 +5,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path("employees", views.employee_list, name='employees'),
-    path("employees/<int:pk>/", views.employee_detail),
+    path("employees/<int:pk>/", views.employee_detail, name='employee'),
     path("jobs", views.work_list),
     path("jobs/<int:pk>/", views.work_detail),
     path("salary/<int:pk>/", views.Salary),

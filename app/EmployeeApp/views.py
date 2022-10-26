@@ -15,7 +15,7 @@ def employee_detail(request, pk):
     """
     try:
         employee = Employee.objects.get(pk=pk)
-    except employee.DoesNotExist:
+    except Employee.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == "GET":
@@ -62,7 +62,7 @@ def work_detail(request, pk):
     """
     try:
         job = Work_Arrangement.objects.get(pk=pk)
-    except job.DoesNotExist:
+    except Work_Arrangement.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == "GET":
