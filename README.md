@@ -43,17 +43,26 @@ python manage.py runserver 8001
 ```
 Only authenticated users can use the API services, for that reason if we try this:
 ```
-curl  http://127.0.0.1:8001/employees/
+curl  http://127.0.0.1:8001/employees
+curl  http://127.0.0.1:8001/jobs
+curl  http://127.0.0.1:8001/salary/1/
+curl  http://127.0.0.1:8001/salary/2/
+
 ```
 we get:
 ```
 [{"id":1,"name":"mohamed","team":"DT","hourly_rate":20.0,"is_team_leader":true},{"id":2,"name":"hamza","team":"DT","hourly_rate":15.0,"is_team_leader":false}]
+[{"id":1,"full_or_partime":"FT","work_rate":100.0,"employee":1},{"id":2,"full_or_partime":"PT","work_rate":30.0,"employee":2},{"id":3,"full_or_partime":"PT","work_rate":70.0,"employee":2}]
+{"Salary": 3520.0}
+{"Salary": 2400.0}
 ```
 
-we get the movie with id = 1
+we get the employee with id = 1
+we get the jobs with id = 1
 
 ```
 {"id":1,"name":"mohamed","team":"DT","hourly_rate":20.0,"is_team_leader":true}
+{"id":1,"full_or_partime":"FT","work_rate":100.0,"employee":1}
 ```
 
 
