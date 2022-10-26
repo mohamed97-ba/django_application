@@ -36,8 +36,12 @@ Endpoint |HTTP Method | CRUD Method | Result
 ## Use
 We can test the API using [curl](https://curl.haxx.se/) or [httpie](https://github.com/jakubroztocil/httpie#installation), or we can use [Postman](https://www.postman.com/)
 
+First, we have to run up the postgres docker compose.
+```
+make up
+```
 
-First, we have to start up Django's development server.
+then, we have to start up Django's development server.
 ```
 python manage.py runserver 8001
 ```
