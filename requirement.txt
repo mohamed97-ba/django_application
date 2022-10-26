@@ -5,3 +5,4 @@ flake8==5.0.4
 Django==4.1.2
 djangorestframework==3.14.0
 flake8==5.0.4
+coverage==3.6
