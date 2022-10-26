@@ -21,7 +21,7 @@ pip install -r requirement.txt
 
 ## Structure
 
-In our case, `Employee`, `Work_Arrangement`, so we will use the following URLS - `/employees/` and `/employees/<pk>` for collections and elements, respectively:
+In our case, `Employee`, `Work_Arrangement`, so we will use the following URLS - `/employees/`, `/employees/<pk>`, `/jobs/`, `jobs/:pk` and `salary/:pk` respectively:
 
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
